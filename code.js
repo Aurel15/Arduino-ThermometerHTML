@@ -114,7 +114,6 @@ window.setInterval(function () {
     xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://localhost:8080", false);
     xhttp.send();
-
     var res = JSON.parse(xhttp.responseText);
     
     document.querySelector("#temperature").innerHTML = res.temp
